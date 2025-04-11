@@ -23,7 +23,8 @@ Parking-Slot-Detection/
 ├── coordinates.py        # For drawing polylines around the parking slot
 ├── parking_slots.json    # JSON file with parking slot coordinates
 ├── yolov8n.pt            # YOLOv8 Pre-trained model
-└── output_parking_detection.mp4      # Storing output video 
+|___output/                # Storing output video 
+        └── output_parking_detection.mp4      
 ```
 
 ## Steps to Run
@@ -35,7 +36,11 @@ Parking-Slot-Detection/
 pip install ultralytics opencv-python numpy
 ```
 
-3. Prepare `parking_slots.json` with coordinates of your parking slots in the frame.
+3. Prepare `parking_slots.json` with coordinates.py file for parking slots in the frame.
+ Run the Code:
+```bash
+python coordinates.py
+```
 
 4. Run the Code:
 ```bash
@@ -49,15 +54,14 @@ python main.py
 
 ---
 
-# Task 3 - Human Fall Detection System 🚨 (Work In Progress)
+# Task 3 - Human Fall Detection System 
 
 ## Objective
-Detect Human Falls using YOLOv8 and build a Streamlit Web Application.
+Detect Human Falls using custom YOLO model
 
 ---
 
-## Current Status
-> Task is not completed yet.  
+## Status 
 > Model is trained, Streamlit Web Application is developed for fall detection with video upload & download functionality.
 
 ---
@@ -76,7 +80,6 @@ Detect Human Falls using YOLOv8 and build a Streamlit Web Application.
 human falling/
 │
 ├── detect.py            # Streamlit Web App Code
-├── requirements.txt     # Python Dependencies
 │
 ├── weights/             # Trained YOLOv8 Model Weights
 │   └── best.pt
