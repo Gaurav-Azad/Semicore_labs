@@ -78,17 +78,19 @@ Detect Human Falls using custom YOLO model
 ## Directory Structure
 ```
 human falling/
-│
-├── detect.py            # Streamlit Web App Code
-│
-├── weights/             # Trained YOLOv8 Model Weights
-│   └── best.pt
-│
+|── collab_training/     # Google Colab Training Notebook
+|   └── train.ipynb
+├── dataset/
+|      └── test_video1.mp4
+|       └── test_video2.mp4
 ├── output/              # Auto-generated Folder for Output Videos
 │   └── output_video.mp4
-│
-└── collab_training/     # Google Colab Training Notebook
-    └── train.ipynb
+|
+├── weights/             # Trained YOLOv8 Model Weights
+│   └── best.pt
+|
+├── detect.py            # Streamlit Web App Code
+
 ```
 
 ---
@@ -134,12 +136,11 @@ streamlit run detect.py
 ---
 
 ## Note
-> Task 3 is not done yet
+> Task 2 is not done yet
 
 ---
 
 ## Developed By
-> Made with ❤️ by [Your Name]  
-> Connect on [LinkedIn](https://www.linkedin.com/)
+> Made with ❤️ by Gaurav Kumar Azad 
 
 ---
