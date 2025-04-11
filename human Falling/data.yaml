@@ -1,0 +1,8 @@
+path: C:\Users\DELL\Desktop\human_falling\dataset  # Root path of your dataset
+
+train: images/train  
+val: images/val    
+
+names:
+  0: fall
+  1: normal
